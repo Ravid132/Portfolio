@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body onload="init()">
+    <h1><u>Touch Numbers</u></h1>
+    <div class="container">
+        <button class="startGame" onclick="toggleGame()">New Game</button>
+        <div class="radio-btn">
+            <label for="easy"><b>Easy</b>
+                <input type="radio" checked="checked" name="easy" onclick="chooseLevel(16)" value="16" />
+            </label>
+
+            <label for="hard"><b>Hard</b>
+                <input type="radio" name="easy" onclick="chooseLevel(25)" value="25" />
+            </label>
+
+            <label for="extremem"><b>Extreme</b>
+                <input type="radio" name="easy" onclick="chooseLevel(36)" value="36" />
+            </label>
+        </div>
+        <div class="gameContainer">
+            <div class="gameTime">
+                <label><b>Timer:</b></label>
+                <label class="timer"></label>
+            </div>
+
+            <div class="nextNumber">
+                <label><b>next Number:</b></label>
+                <label class="nextNum"></label>
+            </div>
+            <table border="1" cellpadding="10">
+                <tbody class="board"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal">
+        <button onclick="closeModal()">x</button>
+        <h2>You Won</h2>
+    </div>
+
+    <script src="29-draw-nums.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

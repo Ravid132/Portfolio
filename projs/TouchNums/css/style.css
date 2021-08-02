@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background: rgb(231, 231, 231);
+}
+
+.occupied{
+    border:1px solid red;
+}
+
+.modal{
+    display: none;
+}
+
+.startGame{
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+}
+
+.gameContainer{
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.container{
+    background-color: crimson;
+    border: 2px solid #000;    
+    width: 30%;
+    margin: auto;
+}
+
+ table{
+    margin-top: 55px; 
+    margin: auto;
+    border: none;
+} 
+
+tbody{
+    border: 2px solid #000;    
+}
+
+td{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+.gameTime{
+    display: inline-block;
+    border: 1px solid #fff;
+
+}
+
+.nextNumber{
+    display: inline-block;
+    border: 1px solid #fff;
+}

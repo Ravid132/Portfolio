@@ -1,0 +1,159 @@
+*{
+    text-align: center;
+    font-family: cursive;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(1,5,31,1) 100%); */
+    /* background-color: cadetblue; */
+    background-color: rgb(53, 53, 53);
+}
+
+.board{
+    align-items: center;
+    margin: auto;
+}
+
+.board table{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+}
+
+.board td{
+    height: 15px;
+    width: 15px;
+    max-width: 15px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.board td:hover{
+    border: 1px solid yellow;
+}
+
+/* hidden cell */
+.hide{
+        background: linear-gradient(0deg,rgba(34,193,195,1)0%,rgba(45,175,253,1)100%);
+}
+
+/* open cell */
+.reveal{
+     background-color: rgb(48, 48, 48);
+    color: red;
+}
+
+.timer{
+    border: 2px dotted #fff;
+    text-shadow: 1px 1px black;
+    padding: 10px;
+    box-shadow: 5px 10px #363636;
+}
+
+.smiley{
+    font-size:25px;
+    width:140px;
+    height:50px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background:linear-gradient(#838383, #363636);
+}
+
+.levels{
+    margin: 15px 15px;
+}
+
+.levels button{
+    background-color: lightslategrey;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.hints{
+    padding: 5px;
+}
+
+.hint{
+    margin: 5px;
+}
+
+.hint.hide{
+    background-color: lightpink;
+    display: none;
+}
+
+.safe-click-btn{
+    border-radius: 9px;
+    color:white;
+    background-color:lightskyblue ;
+    border: 1px solid white;
+    padding: 15px 25px 15px 25px;
+}
+
+.safe-click{
+    background-color: rgb(243, 87, 87);
+    border: 3px dotted red;
+}
+
+.undo-btn{
+    border-radius: 9px;
+    box-shadow: 2px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #e39904;
+    padding: 15px 35px 15px 35px;
+    border: solid #1f628d 1px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.modal{
+    display: none;
+    border: 2px solid black;
+    width: 30%;
+    margin: auto;
+    position: relative;
+    background-color: red;
+}
+
+.modal button{
+    top: 0;
+    right: 0;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #363636;
+}
+
+.fade{
+    opacity: 0;
+    animation-name:fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
